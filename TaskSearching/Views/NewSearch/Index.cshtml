@@ -1,0 +1,15 @@
+﻿@model TaskSearching.Models.Search
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Search</h2>
+@using (Html.BeginForm("ViewResults", "NewSearch"))
+{
+
+    <div>
+        @Html.TextBox("Search")
+        <input type="submit" , name="name" , value="search" />
+    </div>
+
+}
